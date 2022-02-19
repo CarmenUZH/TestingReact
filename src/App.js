@@ -6,7 +6,8 @@ import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
 import Button_Task from "./components/Button_Task";
 import React from 'react';
-import header from "./components/Header";
+import{ BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
+import About from "./components/About"
 
 function App() {
     const name = "hammond"
@@ -85,7 +86,7 @@ function App() {
         tasks.map((task)=>task.id === id ? {...task,reminder: data.reminder} : task))
     }
 
-  return (
+  return ( <Router>
     <div className="container">
     <Header />
 
@@ -97,9 +98,13 @@ function App() {
                      showAdd={showAddTask}
         />
         {showAddTask && <AddTask onAdd={addTask} />}
-        <Footer/>
+        {/*<Routes>
+            <Route path = "/about" exact component = {About}/>
+        </Routes> */}
+            <Footer/>
     </div>
+      </Router>
   );
 }
-
+//couldn't yet figure out how to get routes to work
 export default App;

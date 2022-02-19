@@ -9,6 +9,7 @@ const Footer = () => {
     return (
        <footer className="footer">
            <p style={{color:"royalblue"}}> i cant fockin drive mate</p>
+           <a href="/about">About</a>
        </footer>
     )
 }
