@@ -53,6 +53,14 @@ body {
     display: block;
     width: 100%;
 }
+.btn-block-main {
+    display: flex;
+    width: 100%;
+     padding: 5px 5px;
+    align-items: center;
+    align-self: end;
+
+}
 
 .task {
     background: #f4f4f4;
@@ -72,7 +80,7 @@ body {
 }
 
 .add-form {
-    margin-bottom: 40px;
+    margin-bottom: 4px;
     background-color: aquamarine;
 }
 
